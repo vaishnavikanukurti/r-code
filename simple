@@ -1,0 +1,87 @@
+print("Hey Demons its your girl V")
+
+Assignment operations 
+(x<- 664+2)
+[1] 666
+(y = x - 653 )
+[1]13
+
+numeric vector 
+these_demonic_numbers <-c(666,13)
+typeof(these_demonic_numbers)
+[1] double 
+
+character vectors and coersion
+money_in_my_bankaccount <- c("13","45","33")
+typeof(money_in_my_bankaccount)
+[1] character 
+Money_i_wish_i_had <- as.numeric(money_in_my_bankaccount)
+Money_i_wish_i_had
+[1] 13, 45, 33
+typeof(Money_i_wish_i_had)
+[1] double   
+
+typecasting implicit 
+more_money <- c(Money_i_wish_i_had,"1000")
+more_money
+[1] "13", "45", "33", "1000"
+typeof(more_money)
+[1] character 
+
+Vector manipulation (Appending) 
+Naruto_characters <- c("naruto","sakura","sasuke","hinata","kakashi")
+Naruto_characters
+[1] "naruto","sakura","sasuke","hinata","kakashi"
+sand_shinobi <- c("gaara", "temari", "kankuro")
+naruto_love <-c(Naruto_characters, "ino", "choji", "shikamaru", sand_shinobi)
+naruto_love
+[1] "naruto","sakura","sasuke","hinata","kakashi", "ino", "choji", "shikamaru", "gaara", "temari", "kankuro"
+
+Lists
+(waste_list <- list("Audio", "partyrockanthem", 1:20))
+[[1]]
+[1] "audio
+[[2]]
+[1] "partyrockanthem"
+[[3]]
+[1] 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 
+
+list accessing 
+waste_list[[3]][2]
+[1] 2
+
+Matrix 
+its_time <- matrix(data = 1:15, nrow = 5)
+its_time
+##    [1,] [2,] [3,] 
+##[1,] 1    2    3   
+##[2,] 4    5    6  
+##[3,] 7    8    9
+##[4,] 10   11   12
+##[5,] 13   14   15
+its_time * 2 
+##    [1,] [2,] [3,] 
+##[1,] 2    4    6   
+##[2,] 8    10   12  
+##[3,] 14   16   18
+##[4,] 20   22   24
+##[5,] 26   28   30
+
+Data Frame tabular Stucture 
+food <- c("burger","pizza", "pasta", "chickenlollipop")
+restaurants <- c("leongrill", "popsies", "truffles", "ectasy")
+db <- data.frame(dishes = food, served_in = restaurants)
+db
+##     dishes              served in 
+## 1   burger              leongrill         
+## 2    pizza               popsies
+## 3    pasta               truffles
+## 4 chickenlollipop         ectasy 
+
+
+
+
+
+
+
+
